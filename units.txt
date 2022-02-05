@@ -1,0 +1,73 @@
+
+COMPUTER TECHNOLOGY
+
+YEAR TWO Semester One
+CCT 201 Object Oriented programming II 
+CCT 203 Data Structures and Algorithms 
+CCT 205 Engineering Mathematics III 
+CCT 207 Digital Electronics I 
+CCT 209 Comp. Org. & Assm. Lang. Prog.
+CCT 211 Databases
+CCT 213 Electronics III 
+CCT 204 Principles of Operating Systems 
+
+YEAR THREE Semester One
+
+CCT 301 Computer Architecture I 
+CCT 303 Digital Signal Processing 
+CCT 305 Intro. Compiler Const. & Design 
+CCT 307 Computer Networks 
+CCT 309 Digital Systems Design 
+CCT 311 Digital Systems Design Lab
+CCT 315 Communication Systems
+CCT 317 Group Project I 
+CCT 319 Computer Networks Lab I (Cisco I)
+
+YEAR FOUR Semester One
+CCT 401 Computer Systems Engineering I
+CCT 403 Computer Design Lab 
+CCT 405 Computer Technology project I
+CCT 411/ccs420 Neural Networks
+CCT 413/ccs417 Principles of Functional Programming 
+CCT 415 Embedded Computing Systems II 
+CCT 417 Simulation and Modeling 
+CCT 423 Optical fibres: Theory and Applications
+CCT 419/ccs421 Intelligent Agents 
+CCT 425/ccs409 Computer Networks Lab III (Cisco III)
+CCT 416/ccs415 Data Mining 
+
+
+
+COMPUTER SCIENCE
+
+YEAR TWO Semester One
+CCS 201 Object Oriented Programming II (Java)
+CCS203 Data Structures and Algorithms 
+CCS 205 Probability and Statistics
+CCS 207 Digital Electronics II 
+CCS 209 Principles of Operating Systems
+CCS 211 Digital and Analogue Communication Systems 
+CCS 213 Systems Analysis and Design
+
+YEAR THREE Semester One
+CCS 301 Principles of programming languages 
+CCS 303 Design and Analysis of algorithms 
+CCS305 Intro. to Compiler Construction and Design
+CCS 307 Computer Networks
+CCS 309 Information Systems Security and Design 
+CCS 313 Unix Operating Systems 
+CCS 315 Intelligent Systems 
+CCS 317 Computer Networks Lab I (CISCO) 
+CCS 319 Database Administration 
+CCS 323 Group Project 
+
+YEAR FOUR Semester One
+CCS 401 Software Project Management
+CCS 403 Computer Science Project I
+CCS 405 Management Information Systems
+CCS 407 Distributed Systems 
+CCS 409/cct425 Computer Networks Lab III (CISCO III) 
+CCS 417/cct413 Principles of Functional Programming 
+CCS 419 Advanced Computer Architectures 
+CCS 421/cct419 Intelligent Agents 
+CCS 420/cct411 Neural Networks 
