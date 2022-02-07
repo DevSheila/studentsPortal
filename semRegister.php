@@ -9,7 +9,7 @@
     $names="";
 
     if($regNo == null){
-      header("Location:index.html");
+      header("Location:studLogin.php");
     }
 
        // Check connection
