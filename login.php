@@ -29,7 +29,7 @@ if (!$conn ||mysqli_connect_errno()) {
   
     if($count == 1) {
       
-      header("Location: index.html");
+      header("Location: profile.php");
       echo "<h1><center> Login successful </center></h1>";
 
     }else {

@@ -11,7 +11,7 @@
     $units='';
 
     if($regNo == null){
-      header("Location:index.html");
+      header("Location:login.php");
     }
 
        // Check connection

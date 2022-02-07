@@ -6,11 +6,18 @@
     $school="";
     $course="";
     $year="";
+    $fname="";
+    $oname="";
     $names="";
-
+    $units="";
+    $DOB='';
+    $email='';
+    $pass='';
+    $names="";
     if($regNo == null){
-      header("Location:index.html");
+      header("Location:studLogin.php");
     }
+
 
        // Check connection
     if (!$conn ||mysqli_connect_errno()) {
@@ -22,12 +29,16 @@
         $count = mysqli_num_rows($result);
 
             while( $row = mysqli_fetch_array($result,MYSQLI_ASSOC)){
-                $school=$row['school'];
-                $course=$row['course'];
                 $fname=$row['fname'];
                 $oname=$row['other_names'];
+              
+                $school=$row['school'];
+                $course=$row['course'];
+                $DOB=$row['DOB'];
+                $email=$row['email'];
+                $pass=$row['pass'];
             }
-            $names=$fname." ".$oname;
+            $names=$fname.' '.$oname;
 
     }
 ?>
@@ -54,7 +65,7 @@
     <!-- Brand Logo -->
     <a href="../../index3.html" class="brand-link">
       <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">STUDENT PORTAL</span>
+      <span class="brand-text font-weight-light justify-content-center">STUDENT PORTAL</span>
     </a>
 
     <!-- Sidebar -->
@@ -78,13 +89,13 @@
                 
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
-                        <a href="./profile.php" class="nav-link ">
+                        <a href="#" class="nav-link active">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Home</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link active">
+                        <a href="./semRegister.php" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>Sem Registration</p>
                         </a>
@@ -108,6 +119,7 @@
                         <p>Results Slip</p>
                         </a>
                     </li>
+
                     <li class="nav-item">
                         <a href="./logout.php" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
@@ -140,70 +152,73 @@
     </section>
 
     <!-- Main content -->
+      <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-        <div class="row">
-          <!-- left column -->
-          <div class="col-md-6">
-            <!-- general form elements -->
-            <div class="card card-primary">
-              <div class="card-header">
-                <h3 class="card-title">SEMESTER REGISTRATION  </h3>
-              </div>
-              <!-- /.card-header -->
-              <!-- form start -->
-              <form id="semRegister" method="POST" action="sem.php">
-                <div class="card-body">
-                <div class="form-group">
-                    <label for="regNo">Registration Number</label>
-                    <input type="text" class="form-control" name="regNo" id="regNo" value="<?php echo $regNo?>" placeholder="<?php echo $regNo?>"readonly required>
-                  </div>
-
-
-                  <div class="form-group">
-                    <label for="school">School</label>
-                    <input type="text" class="form-control" value="<?php echo  $school?>" name="school" id="school" placeholder="<?php echo  $school?>" readonly required>
-                  </div>
-                  <div class="form-group">
-                    <label for="course">Course</label>
-                    <input type="text" class="form-control" name="course" id="course" value="<?php echo  $course?>" placeholder="<?php echo  $course?>" readonly required>
-                  </div>
-             
-                  <div class="form-group">
-                    <select class="form-control mt-2" id="year" name="year"  required  >
-                                        <option value="" disabled selected >Year</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                    </select>
-                  </div>
-
-                  
-                  <div class="form-group">
-                    <select class="form-control mt-2" id="sem" name="sem"  required  >
-                                        <option value="" disabled selected >Semester</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                    
-                    </select>
-                  </div>
-    
-                <!-- /.card-body -->
-
-                <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Submit</button>
+   
+            <div class="row">
+                <!-- left column -->
+                <div class="col-md-3">
                 </div>
-              </form>
-            </div>
-            <!-- /.card -->
 
-          
-          </div>
-    
-        </div>
-        <!-- /.row -->
-      </div><!-- /.container-fluid -->
+                
+
+                <div class="col-md-6">
+                
+                    <!-- /.card-header -->
+                    <div class="col-12 col-md-12 col-sm-12  d-flex align-items-stretch flex-column">
+                    
+                        <div class="card card-primary">
+                            <div class="card-header">
+                                <h3 class="card-title">PROFILE  </h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                                <div>
+                                    <strong><i class="fas fa-user mr-1"></i>STUDENT NAME</strong><br>
+                                    <p class="text-muted"><?php echo $names;?></p>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <strong><i class="fas fa-user mr-1"></i>STUDENT NO</strong><br>
+                                    <p class="text-muted"><?php echo $regNo;?></p>
+                                    <hr>
+                                </div>
+
+                                <div>
+                                    <strong><i class="fas fa-user mr-1"></i>SCHOOL</strong><br>
+                                    <p class="text-muted"><?php echo $school;?></p>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <strong><i class="fas fa-user mr-1"></i>COURSE</strong><br>
+                                    <p class="text-muted"><?php echo $course;?></p>
+                                    <hr>
+                                </div>
+
+                                <div>
+                                    <strong><i class="fas fa-user mr-1"></i>EMAIL</strong><br>
+                                    <p class="text-muted"><?php echo $email;?></p>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <strong><i class="fas fa-user mr-1"></i>DOB</strong><br>
+                                    <p class="text-muted"><?php echo $DOB;?></p>
+                                    <hr>
+                                </div>
+
+                                <div>
+                                    <strong><i class="fas fa-user mr-1"></i>pass</strong><br>
+                                    <p class="text-muted"><?php echo $pass;?></p>
+                                    <hr>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
     </section>
     <!-- /.content -->
   </div>

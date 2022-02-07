@@ -24,7 +24,7 @@ if (!$conn ||mysqli_connect_errno()) {
     $_SESSION['regNo'] =$regNo;
   
     if ($conn->query($sql) === TRUE) {
-      header("Location: index.html");
+      header("Location: profile.php");
 
       } else {
         echo "Error: " . $sql . "<br>" . $conn->error;

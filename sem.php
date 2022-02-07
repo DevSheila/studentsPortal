@@ -20,7 +20,7 @@ if (!$conn ||mysqli_connect_errno()) {
     
     $sql ="INSERT INTO semester_reg(reg_no, year, reg_date,semester_no, unique_no) VALUES ('$regNo','$year',$currYear,'$sem','')";
     if ($conn->query($sql) === TRUE) {
-      header("Location: index.html");
+      header("Location: unitsRegister.php");
 
       } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
